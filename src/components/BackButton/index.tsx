@@ -21,7 +21,6 @@ export function BackButton({ color, ...rest }: Props) {
         size={24}
         color={color ? color : theme.colors.text}
       />
-
     </Container>
   );
 }
