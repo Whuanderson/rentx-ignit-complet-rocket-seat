@@ -49,6 +49,7 @@ export function SignUpFirstStep() {
       await schema.validate(data);
 
       navigation.navigate("SignUpSecondStep", { user: data });
+
     } catch (error) {
       if (error instanceof Yup.ValidationError) {
         return Alert.alert('Erro', error.message)

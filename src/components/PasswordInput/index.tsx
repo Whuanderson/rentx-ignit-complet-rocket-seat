@@ -8,6 +8,7 @@ import {
   IconContainer,
   InputText,
 } from './styles';
+
 import { TextInputProps } from 'react-native';
 
 interface Props extends TextInputProps {

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { format } from 'date-fns';
 import { api } from '../../services/api';
-import { Alert } from 'react-native';
+import { Alert, StatusBar } from 'react-native';
 
 import { Feather } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
@@ -87,7 +87,7 @@ export function SchedulingDetails() {
       unavailable_dates
     })
       .then(() => {
-        navigation.navigate('Confirmation',{
+        navigation.navigate('Confirmation', {
           nextScreenRoute: 'Home',
           title: 'Carro alugado!',
           message: `Agora você só precisa ir\naté a concessionária da RENTX`
@@ -112,6 +112,12 @@ export function SchedulingDetails() {
 
   return (
     <Container>
+      <StatusBar
+        barStyle="dark-content"
+        translucent
+        backgroundColor="transparent"
+      />
+      
       <Header>
         <BackButton onPress={handleBack} />
       </Header>
