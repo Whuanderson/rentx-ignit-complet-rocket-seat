@@ -16,7 +16,7 @@ import {
 
 import ArrowSvg from '../../assets/arrow.svg'
 import { CarDTO } from '../../dtos/CarDTO';
-import { getPlataformDate } from '../../utils/getPlataformDate';
+import { getPlatformDate } from '../../utils/getPlataformDate';
 
 
 import {
@@ -78,8 +78,8 @@ export function Scheduling() {
     const endDate = Object.keys(interval)[Object.keys(interval).length - 1];
 
     setRentalPeriod({
-      startFormatted: format(getPlataformDate(new Date(fristDate)), 'dd/MM/yyyy'),
-      endFormatted: format(getPlataformDate(new Date(endDate)), 'dd/MM/yyyy'),
+      startFormatted: format(getPlatformDate(new Date(fristDate)), 'dd/MM/yyyy'),
+      endFormatted: format(getPlatformDate(new Date(endDate)), 'dd/MM/yyyy'),
     })
   }
 
@@ -113,7 +113,7 @@ export function Scheduling() {
           <ArrowSvg />
 
           <DateInfo>
-            <DateTitle>ATÈ</DateTitle>
+            <DateTitle>ATÉ</DateTitle>
             <DateValue selected={!!rentalPeriod.endFormatted}>
               {rentalPeriod.endFormatted}
             </DateValue>

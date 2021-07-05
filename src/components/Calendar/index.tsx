@@ -20,7 +20,6 @@ import {
      textColor: string;
      disabled?: boolean;
      disableTouchEvent?: boolean;
-
    },
  }
 

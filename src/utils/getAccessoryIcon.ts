@@ -6,7 +6,7 @@ import  EnergySvg  from  '../assets/energy.svg';
 import  HybridSvg  from  '../assets/hybrid.svg';
 import  ExchangeSvg  from  '../assets/exchange.svg';
 import  PeopleSvg  from  '../assets/people.svg';
-import CarSvg from '../assets/car.svg';
+import  CarSvg from '../assets/car.svg';
 
 export function getAccessoryIcon(type: string){
   switch(type) {
