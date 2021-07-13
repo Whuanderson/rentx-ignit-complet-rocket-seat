@@ -77,7 +77,3 @@ Lançado em 2021 :closed_book: Licença
 
 Feito por [Whuanderson Marinho](https://github.com/Whuanderson) 🚀.
 Esse projeto está sobre [MIT license](./LICENSE).
-
-# rentx-ignit-complet-rocket-seat
-Aplicativo de aluguel de carros criado assistindo as aulas de react native, no ignit da rocket seat,
-criado usando expo
